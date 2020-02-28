@@ -8,10 +8,10 @@
 
 name: 官方openwrt配置文件生成
 
-# on:
-#    push:
-#      paths:
-#       - '.github/workflows/.config.yml'
+on:
+   push:
+     paths:
+      - '.github/workflows/.config.yml'
       
 # schedule:
 #   - cron: 0 8 * * 5
