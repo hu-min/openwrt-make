@@ -39,7 +39,9 @@ jobs:
 
     steps:
     - name: branch
-    run: git branch -a
+    run: 
+      cd openwrt
+      git branch -a
 
     - name: Checkout
       uses: actions/checkout@openwrt-19.07
