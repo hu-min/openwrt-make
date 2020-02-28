@@ -14,10 +14,12 @@ on:
   # push:
   #   branches:
   #     - master
-    # paths:
+     paths:
     #   - '.config'
- schedule:
-   - cron: 0 8 * * 5
+      - '.github/workflows/xiaomi_miwifi-nano-openwrt.yml'
+      
+# schedule:
+#   - cron: 0 8 * * 5
 #  watch:
 #    types: started
 
