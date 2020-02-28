@@ -39,7 +39,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@openwrt-19.07
+      uses: actions/setup-node@openwrt-19.07
 
     - name: Initialization environment
       env:
