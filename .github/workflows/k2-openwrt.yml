@@ -55,12 +55,6 @@ jobs:
     - name: Clone source code
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
 
-    - name: branch
-    run: |
-      sudo -E apt-get -qq update
-      sudo -E apt-get git
-      cd openwrt
-      git branch -a
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
