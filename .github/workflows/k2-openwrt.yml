@@ -61,8 +61,6 @@ jobs:
       sudo -E apt-get git
       cd openwrt
       git branch -a
-
-
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
