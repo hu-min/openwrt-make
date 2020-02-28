@@ -36,7 +36,11 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
 
+
     steps:
+    - name: branch
+    run: git branch -a
+
     - name: Checkout
       uses: actions/checkout@openwrt-19.07
 
