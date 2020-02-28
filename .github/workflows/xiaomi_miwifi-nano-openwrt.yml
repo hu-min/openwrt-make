@@ -11,7 +11,7 @@ name: xiaomi_miwifi-nano lean-openwrt
 on:
   # release:
   #   types: published
-  # push:
+   push:
   #   branches:
   #     - master
      paths:
