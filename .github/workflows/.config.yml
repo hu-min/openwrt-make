@@ -9,9 +9,11 @@
 name: 官方openwrt配置文件生成
 
 on:
-   push:
-     paths:
-      - '.github/workflows/.config.yml'
+  #  push:
+  #    paths:
+  #     - '.github/workflows/.config.yml'
+  release:
+    types: [published]
       
 # schedule:
 #   - cron: 0 8 * * 5
@@ -20,7 +22,7 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: openwrt
+  REPO_BRANCH: lede-17.01
   CONFIG_FILE: .config
   DIY_SH: diy.sh
   SSH_ACTIONS: true
@@ -61,7 +63,6 @@ jobs:
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_SH
         cd openwrt
         ../$DIY_SH
