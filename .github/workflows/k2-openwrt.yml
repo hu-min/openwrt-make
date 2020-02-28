@@ -40,6 +40,8 @@ jobs:
     steps:
     - name: branch
     run: 
+      sudo -E apt-get -qq update
+      sudo -E apt-get git
       cd openwrt
       git branch -a
 
