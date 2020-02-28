@@ -44,7 +44,6 @@ jobs:
       sudo -E apt-get git
       cd openwrt
       git branch -a
-
     - name: Checkout
       uses: actions/checkout@openwrt-19.07
 
