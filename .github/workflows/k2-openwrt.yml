@@ -38,7 +38,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@master-v19.07
+      uses: actions/checkout@openwrt-v19.07
 
     - name: Initialization environment
       env:
