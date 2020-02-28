@@ -12,8 +12,8 @@ on:
    push:
      paths:
       - '.github/workflows/.config.yml'
-  release:
-    types: [published]
+  # release:
+  #   types: [published]
       
 # schedule:
 #   - cron: 0 8 * * 5
