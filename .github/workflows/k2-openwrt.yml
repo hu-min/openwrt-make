@@ -11,11 +11,11 @@ name: k2 官方OpenWrt
 on:
   # release:
   #   types: published
-  # push:
+  push:
   #   branches:
   #     - master
-  #   paths:
-  #     - '.config'
+    paths:
+      - 'k2-openwrt.config'
 #  schedule:
 #    - cron: 0 8 * * 5
   watch:
@@ -24,7 +24,7 @@ on:
 env:
   REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: master
-  CONFIG_FILE: .config
+  CONFIG_FILE: k2-openwrt.config
   DIY_SH: diy.sh
   SSH_ACTIONS: true
   UPLOAD_BIN_DIR: false
@@ -87,11 +87,6 @@ jobs:
         echo -e "$(nproc) thread compile"
         make -j$(nproc) || make -j1 V=s
         echo "::set-output name=status::success"
-        
-    - name: mv .config
-      id: mv        
-      run: |
-        mv .config openwrt/bin/*/*
         
     - name: Upload bin directory
       uses: actions/upload-artifact@master
