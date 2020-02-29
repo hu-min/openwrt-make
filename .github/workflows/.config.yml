@@ -76,5 +76,5 @@ jobs:
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
-        name: 官方配置文件
+        name: k2官方openwrt配置文件
         path: openwrt/.config
