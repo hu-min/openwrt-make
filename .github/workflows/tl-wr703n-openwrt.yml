@@ -16,7 +16,7 @@ on:
   #     - master
      paths:
       - 'tl-wr703n-openwrt.config'
-      - '.github/workflows/tl-wr703n-openwrt.yml'
+      # - '.github/workflows/tl-wr703n-openwrt.yml'
       
 # schedule:
 #   - cron: 0 8 * * 5
@@ -28,7 +28,7 @@ env:
   REPO_BRANCH: openwrt-19.07
   CONFIG_FILE: tl-wr703n-openwrt.config
   DIY_SH: diy.sh
-  SSH_ACTIONS: true
+  SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
