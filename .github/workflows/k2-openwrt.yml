@@ -107,5 +107,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: k2-官方OpenWrt
+        name: k2-官方OpenWrt(16M闪存专用)
         path: ${{ env.FIRMWARE }}
