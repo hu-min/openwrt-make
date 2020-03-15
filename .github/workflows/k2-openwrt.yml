@@ -22,7 +22,7 @@ on:
   #   types: started
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt
+  REPO_URL: https://github.com/hanlihanshaobo/openwrt
   REPO_BRANCH: openwrt-19.07
   CONFIG_FILE: k2-openwrt.config
   DIY_SH: diy.sh
