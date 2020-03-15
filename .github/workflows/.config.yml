@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: 官方openwrt配置文件生成
+name: openwrt配置文件生成
 
 on:
    push:
@@ -79,5 +79,5 @@ jobs:
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
-        name: x86官方openwrt配置文件
+        name: x86-openwrt(.config文件)
         path: openwrt/.config
