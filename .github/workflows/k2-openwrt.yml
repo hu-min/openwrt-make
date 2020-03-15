@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: k2 官方OpenWrt
+name: k2-OpenWrt
 
 on:
   # release:
@@ -107,5 +107,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: k2-官方OpenWrt(16M闪存专用)
+        name: k2-OpenWrt(16M闪存专用)
         path: ${{ env.FIRMWARE }}
