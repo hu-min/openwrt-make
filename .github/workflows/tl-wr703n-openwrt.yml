@@ -14,8 +14,8 @@ on:
    push:
   #   branches:
   #     - master
-     paths:
-      - 'tl-wr703n-openwrt.config'
+    #  paths:
+    #   - 'tl-wr703n-openwrt.config'
       # - '.github/workflows/tl-wr703n-openwrt.yml'
       
 # schedule:
