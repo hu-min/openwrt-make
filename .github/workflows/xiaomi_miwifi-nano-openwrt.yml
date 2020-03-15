@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: xiaomi_miwifi-nano lean-openwrt
+name: xiaomi_miwifi-nano-openwrt(lean)
 
 on:
   # release:
@@ -112,5 +112,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: xiaomi_miwifi-nano lean-openwrt
+        name: xiaomi_miwifi-nano-openwrt(lean)
         path: ${{ env.FIRMWARE }}
