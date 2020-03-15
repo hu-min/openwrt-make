@@ -15,9 +15,7 @@ on:
   #   branches:
   #     - master
     #  paths:
-    #   - 'tl-wr703n-openwrt.config'
-      # - '.github/workflows/tl-wr703n-openwrt.yml'
-      
+    #   - 'tl-wr703n-openwrt.config'     
 # schedule:
 #   - cron: 0 8 * * 5
 #  watch:
