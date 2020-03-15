@@ -15,7 +15,7 @@ on:
   #   branches:
   #     - master
     #  paths:
-    #   - 'xiaomi_miwifi-nano(lean).config'
+    #   - 'xiaomi_miwifi-nano-openwrt(lean).config'
     #   - '.github/workflows/xiaomi_miwifi-nano-openwrt.yml'
       
 # schedule:
@@ -26,7 +26,7 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: xiaomi_miwifi-nano(lean).config
+  CONFIG_FILE: xiaomi_miwifi-nano-openwrt(lean).config
   DIY_SH: diy.sh
   SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
