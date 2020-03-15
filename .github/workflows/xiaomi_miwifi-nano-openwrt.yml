@@ -14,8 +14,8 @@ on:
    push:
   #   branches:
   #     - master
-     paths:
-      - 'xiaomi_miwifi-nano(lean).config'
+    #  paths:
+    #   - 'xiaomi_miwifi-nano(lean).config'
     #   - '.github/workflows/xiaomi_miwifi-nano-openwrt.yml'
       
 # schedule:
